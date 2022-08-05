@@ -5,10 +5,7 @@ package main
 #cgo CFLAGS: -I./CarDoorPhm_DataAnalysis
 // 从哪里加载动态库，位置与文件名，-ladd 加载 libadd.so 文件
 #cgo LDFLAGS: -L./CarDoorPhm_DataAnalysis -lCarDoorPhm_DataAnalysis  -Wl,-rpath,CarDoorPhm_DataAnalysis
-//#cgo CFLAGS: -I./testn
 //// 从哪里加载动态库，位置与文件名，-ladd 加载 libadd.so 文件
-//#cgo LDFLAGS: -L./testn -lTEST1_1_N  -Wl,-rpath,testn
-//#include "TEST1_1_N.h"
 #include "CarDoorPhm_DataAnalysis.h"
 #include "rtwtypes.h"
 #include "rt_nonfinite.h"
